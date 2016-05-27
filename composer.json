@@ -1,0 +1,17 @@
+{
+  "name": "jiaoyix/jiaoyix-php",
+  "description": "Jiaoyix PHP Library",
+  "keywords": [
+    "jiaoyix",
+    "payment processing",
+    "api"
+  ],
+  "homepage": "https://www.jiaoyix.com/",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3.3",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  }
+}
