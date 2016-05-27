@@ -11,10 +11,7 @@ class Jiaoyix
     public static $apiSecret = '';
 
     // @var string The base URL for the Jiaoyix API.
-    public static $apiBase = 'http://api.jiaoyix.com';
-
-    // @var string The base URL for the Jiaoyix API uploads endpoint.
-    public static $apiUploadBase = 'http://api.jiaoyix.com';
+    public static $apiBase = 'https://api.jiaoyix.com';
 
     // @var string|null The version of the Jiaoyix API to use for requests.
     public static $apiVersion = 'V1';
@@ -28,7 +25,7 @@ class Jiaoyix
     // @var string The Jiaoyix App id to be used for requests.
     public static $appId = null;
 
-    const VERSION = '3.9.0';
+    const VERSION = '2.0.0';
 
     /**
      * @return string The API key used for requests.

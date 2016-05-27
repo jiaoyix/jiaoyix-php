@@ -71,18 +71,4 @@ class Order extends ApiResource
         $this->refreshFrom($response, $opts);
         return $this;
     }
-
-    /**
-     * @param array|null $params
-     * @param array|string|null $options
-     *
-     * @return Order The cancelApplication charge.
-     */
-    public function returnApplication($params = null, $options = null)
-    {
-        $url = $this->instanceUrl() . '/return_application';
-        list($response, $opts) = $this->_request('post', $url, $params, $options);
-        $this->refreshFrom($response, $opts);
-        return $this;
-    }
 }

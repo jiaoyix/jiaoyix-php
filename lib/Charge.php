@@ -36,7 +36,6 @@ class Charge extends ApiResource
         // 如果APP使用自己的支付系统，需要生成第三方支付的请求配置，并更新prepayid到jiaoyix进行记录方便与微信对账使用
         $charge = self::_create($params, $options);
 
-        \Logger::writeln($log_path, json_encode($message));
         return $charge;
     }
 

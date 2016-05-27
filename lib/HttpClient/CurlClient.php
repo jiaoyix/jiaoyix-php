@@ -116,14 +116,6 @@ class CurlClient implements ClientInterface
         $opts[CURLOPT_SSLVERSION] = CURL_SSLVERSION_TLSv1;
         // @codingStandardsIgnoreEnd
 
-        // TODO debug
-        file_put_contents('/tmp/jiaoyix-request.log', var_export(array(
-             $method,
-             $opts[CURLOPT_URL],
-             $opts[CURLOPT_HTTPHEADER],
-             $params,
-             $opts[CURLOPT_POSTFIELDS]), true), FILE_APPEND);
-
         curl_setopt_array($curl, $opts);
         $rbody = curl_exec($curl);
 
@@ -155,12 +147,6 @@ class CurlClient implements ClientInterface
 
         $rcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         curl_close($curl);
-
-        // TODO debug
-        file_put_contents('/tmp/jiaoyix-response.log', var_export(array(
-             $rbody,
-             $rcode,
-             $rheaders), true), FILE_APPEND);
 
         return array($rbody, $rcode, $rheaders);
     }
