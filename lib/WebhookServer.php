@@ -44,8 +44,6 @@ class WebhookServer
     public function run() {
 
         try {
-            $log_path = 'wechat/pay.' . date('Y-m-d') . '.log';
-
             if (!$this->authentication()) {
                 throw new Restful_Exception('authentication failed', 100);
             }
