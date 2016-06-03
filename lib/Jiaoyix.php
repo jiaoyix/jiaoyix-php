@@ -94,24 +94,6 @@ class Jiaoyix
     }
 
     /**
-     * @return string | null The Jiaoyix account ID for connected account
-     *   requests.
-     */
-    public static function getAccountId()
-    {
-        return self::$accountId;
-    }
-
-    /**
-     * @param string $accountId The Jiaoyix account ID to set for connected
-     *   account requests.
-     */
-    public static function setAccountId($accountId)
-    {
-        self::$accountId = $accountId;
-    }
-
-    /**
      * @param string $ApiBase by chicheng 设置请求的路由
      */
     public static function setApiBase($apiBase)

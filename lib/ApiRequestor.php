@@ -172,10 +172,6 @@ class ApiRequestor
             $defaultHeaders['Jiaoyix-Version'] = Jiaoyix::$apiVersion;
         }
 
-        if (Jiaoyix::$accountId) {
-            $defaultHeaders['Jiaoyix-Account'] = Jiaoyix::$accountId;
-        }
-
         $hasFile = false;
         $hasCurlFile = class_exists('\CURLFile', false);
         foreach ($params as $k => $v) {
