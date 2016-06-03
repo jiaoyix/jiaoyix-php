@@ -39,7 +39,10 @@ require(dirname(__FILE__) . '/lib/OrderCancelApplication.php');
 require(dirname(__FILE__) . '/lib/Product.php');
 require(dirname(__FILE__) . '/lib/SKU.php');
 require(dirname(__FILE__) . '/lib/User.php');
-
+require(dirname(__FILE__) . '/lib/ApplicationFee.php');
+require(dirname(__FILE__) . '/lib/Event.php');
+require(dirname(__FILE__) . '/lib/Refund.php');
+require(dirname(__FILE__) . '/lib/Transfer.php');
 // Jiaoyix Pay
 require(dirname(__FILE__) . '/lib/WxPay.php');
 require(dirname(__FILE__) . '/lib/WxpubOAuth.php');

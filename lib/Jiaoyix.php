@@ -10,20 +10,17 @@ class Jiaoyix
     // @var string The Jiaoyix API Secret to be used for requests.
     public static $apiSecret = '';
 
+    // @var string The Jiaoyix App id to be used for requests.
+    public static $appId = null;
+
     // @var string The base URL for the Jiaoyix API.
     public static $apiBase = 'https://api.jiaoyix.com';
 
     // @var string|null The version of the Jiaoyix API to use for requests.
     public static $apiVersion = 'V1';
 
-    // @var string|null The account ID for connected accounts requests.
-    public static $accountId = null;
-
     // @var boolean Defaults to true.
     public static $verifySslCerts = false;
-
-    // @var string The Jiaoyix App id to be used for requests.
-    public static $appId = null;
 
     const VERSION = '2.0.0';
 

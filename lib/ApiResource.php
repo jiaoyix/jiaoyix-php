@@ -91,10 +91,7 @@ abstract class ApiResource extends JiaoyixObject
     {
         if ($params && !is_array($params)) {
             $message = "You must pass an array as the first argument to Jiaoyix API "
-               . "method calls.  (HINT: an example call to create a charge "
-               . "would be: \"Jiaoyix\\Charge::create(array('amount' => 100, "
-               . "'currency' => 'usd', 'card' => array('number' => "
-               . "4242424242424242, 'exp_month' => 5, 'exp_year' => 2015)))\")";
+               . "method calls.";
             throw new Error\Api($message);
         }
     }

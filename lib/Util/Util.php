@@ -70,6 +70,10 @@ abstract class Util
             'sku' => 'Jiaoyix\\SKU',
             'user' => 'Jiaoyix\\User',
             'order_cancel_application' => 'Jiaoyix\\OrderCancelApplication',
+            'application_fee' => 'Jiaoyix\\ApplicationFee',
+            'event' => 'Jiaoyix\\Event',
+            'refund' => 'Jiaoyix\\Refund',
+            'transfer' => 'Jiaoyix\\Transfer',
         );
         if (self::isList($resp)) {
             $mapped = array();

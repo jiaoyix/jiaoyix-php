@@ -163,9 +163,7 @@ class CurlClient implements ClientInterface
             case CURLE_COULDNT_RESOLVE_HOST:
             case CURLE_OPERATION_TIMEOUTED:
                 $msg = "Could not connect to Jiaoyix ($url).  Please check your "
-                 . "internet connection and try again.  If this problem persists, "
-                 . "you should check Jiaoyix's service status at "
-                 . "https://twitter.com/jiaoyixstatus, or";
+                 . "internet connection and try again.";
                 break;
             case CURLE_SSL_CACERT:
             case CURLE_SSL_PEER_CERTIFICATE:
